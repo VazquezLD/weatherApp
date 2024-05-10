@@ -10,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background:linear-gradient(to bottom, #1E0342, #07295f);    
+    background:linear-gradient(to bottom, #00061f, #07295f);    
     
 }
 
@@ -24,7 +24,7 @@ header{
     flex-direction: row;
     top: 0;
     border-bottom: 1px solid #9ac8cd21;
-    background: rgba(21, 12, 145, 0.1);
+    background: rgba(10, 1, 134, 0.1);
     box-shadow: 0 8px 32px 0 rgba(5, 13, 116, 0.37);
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
@@ -54,7 +54,7 @@ header{
 }
 .navbarLink a:hover{
     transition: all 0.3s ease-in-out;
-    color: #0437c4;
+    color: #6f6f70;
 }
 
 /*Estilos sección clima*/
