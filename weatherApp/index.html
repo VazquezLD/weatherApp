@@ -8,6 +8,7 @@
   <title>Weather</title>
 </head>
 <body>
+
   <header>
     <div class="navbarTitle">WeatherApp Developing</div>
     <nav class="navbar">
@@ -20,16 +21,29 @@
         </ul>
     </nav>
   </header>
+
+  <div class="hero">
+ 
+      <h1>Hola terminando la pagina web</h1>
+
+  </div>
+
   <div class="seccionContainer">
     
     <div class="containerCard">
       <div class="inputSection">
-        <span class="inputSpan">Buscar clima en:</span><form id="formulario"><input id="inputciudad" type="text" class="inputClima" placeholder="Ciudad a buscar"></form>
+        <span class="inputSpan">Buscar clima</span><form id="formulario"><input id="inputciudad" type="text" class="inputClima" placeholder="Ciudad a buscar"></form>
+        <span class="errorSpan oculto" id="errorspan">Ciudad no válida...</span>
       </div>
+
+      <div class="resultSections" id="resultSections">
     </div>
 
   </div>
+
   <script src="./scripts/request.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/render.js"></script>
+  
 </body>
 </html>
