@@ -1,9 +1,9 @@
-
 const form = document.getElementById('formulario');
 const input_ciudad = document.getElementById('inputciudad');
 const contenedor = document.querySelector('.containerCard');
 const errorMsj = document.getElementById('errorspan');
 const cont = document.getElementById('resultSections');
+const cont2 = document.querySelector('.containerGraficos0')
 
 const inputVacio = () =>{
     return input_ciudad.value.trim() == '';
@@ -28,11 +28,13 @@ const obtenerData = (ciudad) =>{
 };
 
 const rendCiudad = ciudad => {
+    cont2.classList.remove('oculto')
     cont.innerHTML = templateCiudad(ciudad)
 };
 
 const buscarCiudad = async(e) =>{
     e.preventDefault()
+
 
     if (inputVacio()){
         errorMsj.classList.remove('oculto')
@@ -48,6 +50,7 @@ const buscarCiudad = async(e) =>{
     };
     
     errorMsj.classList.add('oculto')
+
     rendCiudad(fecthCiudad)
     obtenerPronostico(fetchPronostico)
 };

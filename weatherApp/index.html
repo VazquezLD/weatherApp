@@ -10,10 +10,10 @@
 <body>
 
   <header>
-    <div class="navbarTitle">WeatherApp Developing</div>
+    <span class="navbarTitle">WeatherApp</span>
     <nav class="navbar">
         <ul class="navbarLinks">
-          <li class="navbarLink"><a href="climasas">Clima</a></li>
+          <li class="navbarLink"><a href="climas">Clima</a></li>
           <li class="navbarLink"><a href="#">Información</a></li>
           <li class="navbarLink"><a href="#">Cuenta</a></li>
           <li class="navbarLink"><a href="#">Más</a></li>
@@ -86,11 +86,21 @@
         <span class="errorSpan oculto" id="errorspan">Ciudad no válida...</span>
       </div>
 
-      <div class="resultSections" id="resultSections">
+      
+        <div class="containerGraficos0 oculto">
+          <div class="resultSections" id="resultSections"></div>
+        </div>
+      
     </div>
     
     <div class="graficosContainer1">
-      <canvas id="miGrafico1"></canvas>
+      <div class="containerBox">
+        <canvas id="miGrafico1"></canvas>
+      </div>
+      <div class="containerBox">
+        <canvas id="miGrafico2"></canvas>
+      </div>
+      
     </div>
   </section>
 
