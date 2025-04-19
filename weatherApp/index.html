@@ -24,16 +24,15 @@
   <section class="hero">
  
       <div class="heroContenedor">
+        <div class="heroContenedor2">
         <h1>Informate del clima <br><span class="gradSpan">en cualquier momento</span>.</h1>
         <p class="heroParrafo">
           ¡Bienvenido a nuestra página web dedicada a mantenerte actualizado sobre el clima en cualquier ciudad del mundo! Ya sea que estés planeando un viaje o
            buscando información para tus actividades al aire libre, estamos aquí para brindarte datos precisos y actualizados sobre las condiciones meteorológicas.</p>
            <button class="pruebaButton">Pruebalo ahora mismo!</button>
-      </div>
-      
-      <div class="heroContenedor">
-        <h2>Inicia Sesion</h2>
+        </div>
         <form action="" class="formulario">
+        <h2>Crear cuenta</h2>
 
           <div class="seccionForm">
               <div class="parteForm">
@@ -59,7 +58,7 @@
             </div>
             
             <div class="parteForm">
-              <span>Confirmar constraseña</span>
+              <span>Confirmar</span>
               <input type="password" id="cpassword" class="inputForm">
             </div>
           </div>
@@ -89,12 +88,17 @@
 
       <div class="resultSections" id="resultSections">
     </div>
-
+    
+    <div class="graficosContainer1">
+      <canvas id="miGrafico1"></canvas>
+    </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./scripts/request.js"></script>
   <script src="./scripts/main.js"></script>
   <script src="./scripts/render.js"></script>
+  <script src="./scripts/graficos.js"></script>
   
 </body>
 </html>

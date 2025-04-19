@@ -1,12 +1,12 @@
-/*FUNCION PARA PASAR A FECHA UNIX*/
 function fechaUnix(segundosDesdeEpocaUnix) {
-    const horas = String(Math.floor(segundosDesdeEpocaUnix / 3600)).padStart(2, '0');
-    const minutos = String(Math.floor((segundosDesdeEpocaUnix % 3600) / 60)).padStart(2, '0');
-    const segundos = String(segundosDesdeEpocaUnix % 60).padStart(2, '0');
-    
-    return `${horas}:${minutos}:${segundos}`;
+    let date = new Date(segundosDesdeEpocaUnix*1000)
+    let horas = '0' + date.getHours();
+    let minutos ='0'+ date.getMinutes();
+    let segundos = '0'+ date.getSeconds();
+
+    return horas.slice(-2) + ':' + minutos.slice(-2) + ':' + segundos.slice(-2)
   }
-/*FUNCIÓN DE RENDERIZADO DE DATOS*/
+
 const templateCiudad = ciudad =>{
 
     const {ciudadPais, ciudadNombre, ciudadHumedad,
@@ -14,8 +14,8 @@ const templateCiudad = ciudad =>{
          ciudadTemperaturaMin, ciudadAmanecer, ciudadAtardecer,
          ciudadIcono, ciudadPronActual} = obtenerData(ciudad)
 
-    let amanecer = fechaUnix(ciudadAmanecer-1715400000)
-    let atardecer = fechaUnix(ciudadAtardecer-1715400000)
+    let amanecer = fechaUnix(ciudadAmanecer)
+    let atardecer = fechaUnix(ciudadAtardecer)
     
 
     return `<div class="resultSection">
