@@ -47,7 +47,7 @@ const obtenerPronostico = (ciudad) => {
             datasets: [{
                 label: `Máxima temperatura de los próximos días en ${ciudad.city.name}`,
                 data: temperaturas,
-                backgroundColor: '#0044ff',
+                backgroundColor: '#243757',
                 barThickness: 50,
                 borderRadius: 5
             }]
@@ -74,7 +74,7 @@ const obtenerPronostico = (ciudad) => {
             datasets: [{
                 label: `Sensación Térmica de los proximos en ${ciudad.city.name}`,
                 data: temperaturasST,
-                backgroundColor: '#0044ff',
+                backgroundColor: '#243757',
                 barThickness: 50,
                 borderRadius: 5
             }]
