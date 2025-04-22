@@ -31,7 +31,6 @@ h1{
 }
 
 header{
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,16 +44,16 @@ header{
 }
 .navbar{
     height: auto;
-    padding-right: 40px;
-}
-.navbarTitle{
+    padding: 10px;
     display: flex;
-    padding-left: 25px;
-    font-size: 20px;
-    font-weight: 700;
     align-items: center;
     justify-content: center;
-    color: #000000;
+}
+
+.navbarTitle{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2b2a2a;
 }
 .navbarLinks{
     width: auto;
@@ -73,14 +72,6 @@ header{
     transform: scale(1.07);
 }
 
-
-.seccionContainer{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 .containerCard{
     width:100%;
     height: auto;
@@ -231,7 +222,6 @@ header{
     overflow-x: hidden;
     width: 100%;
     justify-content: space-around;
-    margin-top: 70px;
 }
 
 .heroParrafo{
@@ -330,10 +320,30 @@ header{
 }
 .containerGraficos0{
     align-items: center;
-    height: 300px;
-    width: 90vw;
+    height: 250px;
+    width: 90%;
 }
-
-
+.contenedorGraficos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    justify-content: flex-end;
+}
+.seccionContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.aside{
+    height: 100%;
+    width: 10%;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    border-right: 1px solid #000;
+}
 
 

@@ -37,6 +37,9 @@ const obtenerPronostico = (ciudad) => {
     const fechaFormateada2 = fechaFormateada1.map(fecha => fecha = semana[fecha])
     const temperaturas = etiquetas.map(fecha => Math.max(...dias[fecha]))
 
+    console.log(temperaturas)
+    console.log(temperaturasST)
+
     chart1 = new Chart(miGrafico1, {
         type: 'bar',
         data: {

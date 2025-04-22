@@ -9,20 +9,15 @@
 </head>
 <body>
 
-  <header>
+  <header class="navbar">
     <span class="navbarTitle">WeatherApp</span>
-    <nav class="navbar">
-        <ul class="navbarLinks">
-          <li class="navbarLink"><a href="climas">Clima</a></li>
-          <li class="navbarLink"><a href="#">Información</a></li>
-          <li class="navbarLink"><a href="#">Cuenta</a></li>
-          <li class="navbarLink"><a href="#">Más</a></li>
-        </ul>
-    </nav>
+    <div class="inputSection">
+      <form id="formulario"><input id="inputciudad" type="text" class="inputClima" placeholder="Busca una ciudad"></form>
+      <span class="errorSpan oculto" id="errorspan">Ciudad no válida...</span>
+    </div>
   </header>
 
-  <section class="hero">
- 
+  <!--<section class="hero">
       <div class="heroContenedor">
         <div class="heroContenedor2">
         <h1>Informate del clima <br><span class="gradSpan">en cualquier momento</span>.</h1>
@@ -30,63 +25,16 @@
           ¡Bienvenido a nuestra página web dedicada a mantenerte actualizado sobre el clima en cualquier ciudad del mundo! Ya sea que estés planeando un viaje o
            buscando información para tus actividades al aire libre, estamos aquí para brindarte datos precisos y actualizados sobre las condiciones meteorológicas.</p>
            <button class="pruebaButton">Pruebalo ahora mismo!</button>
-        </div>
-        <form action="" class="formulario">
-        <h2>Crear cuenta</h2>
-
-          <div class="seccionForm">
-              <div class="parteForm">
-                <span>Nombre</span>
-                <input type="text" id="nombre" class="inputForm">
-              </div>
-              
-              <div class="parteForm">
-                <span>Apellido</span>
-                <input type="text" id="apellido" class="inputForm">
-              </div>
-          </div>
-          <div class="seccionForm">
-            <div class="parteForm">
-              <span>Email</span>
-              <input type="email" id="email" class="inputForm">
-            </div>
-          </div>
-          <div class="seccionForm">
-            <div class="parteForm">
-              <span>Contraseña</span>
-              <input type="password" id="password" class="inputForm">
-            </div>
-            
-            <div class="parteForm">
-              <span>Confirmar</span>
-              <input type="password" id="cpassword" class="inputForm">
-            </div>
-          </div>
-          <div class="seccionForm">
-            <div class="parteForm">
-              <span>Fecha de nacimiento</span>
-            <input type="date" class="inputForm">
-            </div>
-          </div>
-          <div class="seccionForm">
-            
-              <button class="registerButton">Registrar</button>
-              <a href="#">Tengo cuenta</a>
-            
-          </div>
-        </form>
+        </div> 
       </div>
-    </section>
+    </section>-->
 
   <section class="seccionContainer">
-    
-    <div class="containerCard" id="climas">
-      <div class="inputSection">
-        <span class="inputSpan">Buscar clima</span><form id="formulario"><input id="inputciudad" type="text" class="inputClima" placeholder="Ciudad a buscar"></form>
-        <span class="errorSpan oculto" id="errorspan">Ciudad no válida...</span>
-      </div>
+    <div class="aside">HOla</div>
 
-      
+    <div class="contenedorGraficos">
+      <div class="containerCard" id="climas">
+
         <div class="containerGraficos0 oculto">
           <div class="resultSections" id="resultSections"></div>
         </div>
@@ -102,6 +50,8 @@
       </div>
       
     </div>
+    </div>
+    
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
