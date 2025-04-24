@@ -4,6 +4,8 @@ const contenedor = document.querySelector('.containerCard');
 const errorMsj = document.getElementById('errorspan');
 const cont = document.getElementById('resultSections');
 const cont2 = document.querySelector('.containerGraficos0')
+const grafs1 = document.getElementById('climas')
+const grafs2 = document.getElementById('climas2')
 
 const inputVacio = () =>{
     return input_ciudad.value.trim() == '';
@@ -43,6 +45,8 @@ const buscarCiudad = async(e) =>{
 
     const fecthCiudad = await requestCiudad(input_ciudad.value);
     const fetchPronostico = await requestPronostico(input_ciudad.value);
+    grafs1.classList.remove('oculto')
+    grafs2.classList.remove('oculto')
 
     if(!fecthCiudad.id || fetchPronostico.id){
         errorMsj.classList.remove('oculto')

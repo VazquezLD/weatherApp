@@ -27,7 +27,7 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 .oculto{
-    display: none;
+    display: none !important;
 }
 
 header{
@@ -79,11 +79,10 @@ header{
 .inputSection{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-left: 20px;
-    gap: 10px;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
     font-weight: 400;
 }
 .inputClima{
@@ -223,18 +222,13 @@ header{
 .heroParrafo{
     max-width: 600px;
 }
-.formulario{
-    background-color: #ffffff8e;
-    box-shadow: rgba(73, 94, 209, 0.2) 0px 7px 40px 10px;
-    width: 30%;
-    height: 75%;
-    border-radius: 20px;
+#formulario{
     display: flex;
     align-items: center;
-    border: 1px solid #0089ff;
-    flex-direction: column;
-    padding: 10px;
+    justify-content: center;
+    gap: 10px;
 }
+
 .heroContenedor2{
     display: flex;
     flex-direction: column;
@@ -302,7 +296,6 @@ header{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     padding: 10px;
 }
 .containerBox{
@@ -329,7 +322,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    width: 95%;
     justify-content: flex-end;
 }
 .seccionContainer{
@@ -353,9 +346,10 @@ header{
 }
 .listaFuncionalidades{
     padding: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
     height: 100%;
 }
 .listaFuncionalidades a{
@@ -382,7 +376,7 @@ header{
 }
 .seccionPerfil{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     font-size: 15px;
@@ -417,4 +411,24 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #c6c6c6;
+}
+
+.funcionalidad{
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.imagenFuncionalidad img{
+    height: 20px;
+    opacity: 90%;
+}
+.fondoFuncionalidad{
+    background-color: #c6c6c6
+}
+#iconolupa{
+    height: 20px;
+    opacity: 60%;
 }

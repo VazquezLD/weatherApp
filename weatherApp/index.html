@@ -12,13 +12,17 @@
   <header class="navbar">
     <span class="navbarTitle">WeatherApp</span>
     <div class="inputSection">
-      <form id="formulario"><input id="inputciudad" type="text" class="inputClima" placeholder="Busca una ciudad"></form>
+
+      <form id="formulario">
+        <img src="./assets/iconobuscar.png" alt="lupa" id="iconolupa">
+        <input id="inputciudad" type="text" class="inputClima" placeholder="Busca una ciudad">
+      </form>
+
       <span class="errorSpan oculto" id="errorspan">Ciudad no válida...</span>
     </div>
     <div class="seccionPerfil">
       <div class="fotoPerfil"></div>
       <span class="nombrePerfil">Luciano Vazquez</span>
-      <img src="./assets/preferencias.png" alt="menuHamburguesa" class="funcionalidadImg">
     </div>
   </header>
 
@@ -36,27 +40,45 @@
 
   <section class="seccionContainer">
     <div class="aside">
-      <ul class="listaFuncionalidades">
-        <li class="funcionalidad">
-          
-          <a href="#"></a></li>
-        <li class="funcionalidad">
-          
-          <a href="#"></a></li>
-        <li class="funcionalidad">
-          
-          <a href="#"></a></li>
-        <li class="funcionalidad">
-          
-          <a href="#"></a></li>
+      <ul class="listaFuncionalidades" id="listafuncs">
+        <li class="funcionalidad"  id="func1">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconoperfil.png" alt="perfil" class="iconoFuncionalidad">
+          </a>
+        </li>
+        <li class="funcionalidad" id="func2">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconoidioma.png" alt="idioma" class="iconoFuncionalidad">
+          </a>
+        </li>
+        <li class="funcionalidad" id="func3">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconoconfig.png" alt="colors" class="iconoFuncionalidad">
+          </a>
+        </li>
+        <li class="funcionalidad" id="func4">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconofavoritos.png" alt="favs" class="iconoFuncionalidad">
+          </a>
+        </li>
+        <li class="funcionalidad" id="func5">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconotuerca.png" alt="config" class="iconoFuncionalidad">
+          </a>
+        </li>
+        <li class="funcionalidad" id="func5">
+          <a href="#" class="imagenFuncionalidad">
+            <img src="./assets/iconosalida.png" alt="config" class="iconoFuncionalidad">
+          </a>
+        </li>
       </ul>
       
     </div>
 
     <div class="contenedorGraficos">
-      <div class="containerCard" id="climas">
+      <div class="containerCard oculto" id="climas">
 
-        <div class="containerGraficos0 oculto">
+        <div class="containerGraficos0">
           <div class="resultSections" id="resultSections"></div>
           <div class="parent">
 
@@ -69,7 +91,7 @@
       
     </div>
     
-    <div class="graficosContainer1">
+    <div class="graficosContainer1 oculto" id="climas2">
       <div class="containerBox">
         <canvas id="miGrafico1"></canvas>
       </div>
@@ -87,6 +109,7 @@
   <script src="./scripts/main.js"></script>
   <script src="./scripts/render.js"></script>
   <script src="./scripts/graficos.js"></script>
+  <script src="./scripts/aside.js"></script>
   
 </body>
 </html>
