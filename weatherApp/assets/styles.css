@@ -38,9 +38,6 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid #00000042;
-    box-shadow: 0 8px 10px -5px rgba(34, 34, 39, 0.308);
-    backdrop-filter: blur( 8.5px );
 }
 
 
@@ -71,6 +68,7 @@ header{
     height: auto;
     border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -325,6 +323,7 @@ header{
     justify-content: space-between;
     height: 250px;
     width: 90%;
+    flex-wrap: wrap;
 }
 .contenedorGraficos{
     display: flex;
@@ -332,22 +331,24 @@ header{
     align-items: center;
     width: 85%;
     justify-content: flex-end;
-    flex-wrap: wrap;
 }
 .seccionContainer{
     width: 100vw;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 50px;
     flex-direction: row;
+
 }
 .aside{
-    height: 100%;
-    width: 15%;
+    height: 95%;
+    width: 5%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #00000060;
+    border: 1px solid #00000060;
     justify-content: space-between;
 }
 .listaFuncionalidades{
@@ -355,7 +356,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 40%;
+    height: 100%;
 }
 .listaFuncionalidades a{
     text-decoration: none;

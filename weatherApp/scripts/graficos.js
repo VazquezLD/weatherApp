@@ -27,8 +27,6 @@ const obtenerPronostico = (ciudad) => {
         sens[fecha].push(Math.round(sensacion))
     });
 
-    console.log(sens)
-
     const etiquetasST = Object.keys(sens)
     const temperaturasST = etiquetasST.map(fecha => Math.max(...sens[fecha]))
 
@@ -36,9 +34,6 @@ const obtenerPronostico = (ciudad) => {
     const fechaFormateada1 = etiquetas.map(fecha => fecha = new Date(fecha).getDay())
     const fechaFormateada2 = fechaFormateada1.map(fecha => fecha = semana[fecha])
     const temperaturas = etiquetas.map(fecha => Math.max(...dias[fecha]))
-
-    console.log(temperaturas)
-    console.log(temperaturasST)
 
     chart1 = new Chart(miGrafico1, {
         type: 'bar',
